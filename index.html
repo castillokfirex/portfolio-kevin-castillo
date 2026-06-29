@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Castillo · Desarrollador en formación</title>
+  <meta name="description" content="Portafolio de Kevin Andrés Castillo Pabón, estudiante de programación en Campuslands. Python, Java, JavaScript, automatización con n8n.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Inicio">
+        <span class="logo-mark">KC</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#contacto" class="nav-link nav-link--cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <svg class="node-grid" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <g class="node-edges">
+            <line x1="120" y1="140" x2="340" y2="260"></line>
+            <line x1="340" y1="260" x2="300" y2="480"></line>
+            <line x1="340" y1="260" x2="600" y2="180"></line>
+            <line x1="600" y1="180" x2="860" y2="240"></line>
+            <line x1="600" y1="180" x2="640" y2="420"></line>
+            <line x1="640" y1="420" x2="300" y2="480"></line>
+            <line x1="640" y1="420" x2="900" y2="500"></line>
+            <line x1="860" y1="240" x2="1080" y2="160"></line>
+            <line x1="900" y1="500" x2="1100" y2="620"></line>
+            <line x1="300" y1="480" x2="180" y2="650"></line>
+          </g>
+          <g class="node-points">
+            <circle cx="120" cy="140" r="5"></circle>
+            <circle cx="340" cy="260" r="7" class="node--accent"></circle>
+            <circle cx="600" cy="180" r="6"></circle>
+            <circle cx="860" cy="240" r="5"></circle>
+            <circle cx="1080" cy="160" r="4"></circle>
+            <circle cx="300" cy="480" r="6"></circle>
+            <circle cx="640" cy="420" r="7" class="node--accent"></circle>
+            <circle cx="900" cy="500" r="5"></circle>
+            <circle cx="1100" cy="620" r="4"></circle>
+            <circle cx="180" cy="650" r="5"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow">Floridablanca, Santander · En formación activa</p>
+        <h1 id="hero-title" class="hero-title">
+          Conectando piezas de código<br>
+          hasta formar soluciones <span class="text-accent">reales</span>.
+        </h1>
+        <p class="hero-subtitle">
+          Soy Kevin Andrés Castillo Pabón, tengo 17 años y estudio programación en
+          Campuslands desde hace 7 meses. Cada proyecto que construyo es un nodo más
+          en una red que no para de crecer.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn--ghost">Hablemos</a>
+        </div>
+
+        <ul class="hero-stack" aria-label="Stack principal">
+          <li>Python</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>MySQL</li>
+          <li>n8n</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="about" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media" aria-hidden="false">
+          <div class="photo-frame">
+            <img
+              src="img/perfil.jpg"
+              alt="Kevin Andrés Castillo Pabón, estudiante de programación"
+              width="640" height="640"
+              loading="lazy"
+              decoding="async"
+              class="photo-img"
+            >
+            <span class="photo-tag">Floridablanca, CO</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="section-eyebrow">01 · Sobre mí</p>
+          <h2 id="about-title" class="section-title">
+            Aprendiendo a construir, <br>un nodo a la vez.
+          </h2>
+          <p class="about-text">
+            Empecé en programación hace apenas 7 meses en Campuslands, pero ya he
+            recorrido suficiente camino como para tener tres proyectos reales en
+            producción: una tienda online, un bot de automatización con IA y un
+            portal bancario simulado. Me gusta entender cómo se conectan las piezas
+            de un sistema, desde el front-end hasta los flujos que automatizan
+            tareas repetitivas.
+          </p>
+          <p class="about-text">
+            No vengo de un camino "perfecto" en tecnología: vengo de la curiosidad
+            constante y de la disciplina de seguir aprendiendo, semana tras semana.
+            Eso es lo que quiero que veas en este portafolio.
+          </p>
+
+          <div class="soft-skills" aria-label="Habilidades blandas">
+            <span class="skill-chip">Liderazgo</span>
+            <span class="skill-chip">Trabajo en equipo</span>
+            <span class="skill-chip">Inteligencia emocional</span>
+            <span class="skill-chip">Adaptabilidad</span>
+            <span class="skill-chip">Comunicación asertiva</span>
+            <span class="skill-chip">Resiliencia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="skills" id="habilidades" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="section-eyebrow">02 · Habilidades técnicas</p>
+        <h2 id="skills-title" class="section-title">Mi stack en construcción</h2>
+        <p class="section-lede">
+          Tecnologías que he venido manejando durante mi formación, agrupadas por
+          el rol que cumplen en lo que construyo.
+        </p>
+
+        <div class="skills-grid">
+
+          <article class="skill-card">
+            <h3 class="skill-card-title">Lenguajes</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">Python</span></li>
+              <li><span class="skill-name">Java</span></li>
+              <li><span class="skill-name">JavaScript</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3 class="skill-card-title">Front-End</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">HTML5</span></li>
+              <li><span class="skill-name">CSS3</span></li>
+              <li><span class="skill-name">Diseño responsive</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3 class="skill-card-title">Datos &amp; Automatización</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">MySQL</span></li>
+              <li><span class="skill-name">n8n</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3 class="skill-card-title">Flujo de trabajo</h3>
+            <ul class="skill-list">
+              <li><span class="skill-name">Git &amp; GitHub</span></li>
+              <li><span class="skill-name">Scrum</span></li>
+              <li><span class="skill-name">Metodologías ágiles</span></li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="projects" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <p class="section-eyebrow">03 · Proyectos</p>
+        <h2 id="projects-title" class="section-title">Lo que he construido hasta ahora</h2>
+        <p class="section-lede">
+          Tres proyectos reales, tres formas distintas de resolver problemas:
+          comercio, automatización y simulación financiera.
+        </p>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-card-head">
+              <span class="project-icon" aria-hidden="true">🛍️</span>
+              <h3 class="project-title">E-commerce de ropa</h3>
+            </div>
+            <p class="project-desc">
+              Interfaz front-end que simula una experiencia de compra moderna para
+              una tienda de ropa online. Prioriza el descubrimiento de productos,
+              la comparación rápida entre prendas y una ruta clara hacia el
+              checkout, basada en un diseño hecho en Figma.
+            </p>
+            <ul class="project-tags" aria-label="Tecnologías usadas">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Flexbox / Grid</li>
+              <li>Responsive</li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://github.com/castillokfirex/aplicacion_de_ecommerce_de_ropa"
+              target="_blank" rel="noopener noreferrer"
+            >
+              Ver repositorio <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-head">
+              <span class="project-icon" aria-hidden="true">🤖</span>
+              <h3 class="project-title">DeliveryBot</h3>
+            </div>
+            <p class="project-desc">
+              Sistema de automatización de pedidos para cafeterías institucionales,
+              construido sobre n8n. Convierte Telegram en una terminal de pedidos
+              inteligente, con un agente de IA que permite consultar el menú,
+              gestionar el carrito y hacer pedidos en tiempo real.
+            </p>
+            <ul class="project-tags" aria-label="Tecnologías usadas">
+              <li>n8n</li>
+              <li>Telegram API</li>
+              <li>Agente IA</li>
+              <li>Automatización</li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://github.com/castillokfirex/Proyecto_DeliveryBot_castillokevin"
+              target="_blank" rel="noopener noreferrer"
+            >
+              Ver repositorio <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-head">
+              <span class="project-icon" aria-hidden="true">🏦</span>
+              <h3 class="project-title">Acme Bank</h3>
+            </div>
+            <p class="project-desc">
+              Simulación de un portal bancario interactivo, responsivo y moderno.
+              Aplicación enfocada exclusivamente en front-end, desarrollada como
+              proyecto final aplicado de la formación en Campuslands.
+            </p>
+            <ul class="project-tags" aria-label="Tecnologías usadas">
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Trabajo en equipo</li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://github.com/castillokfirex/ProyectoAcmebank_JavaScript_castillo-kevin-ricaurte-andrey"
+              target="_blank" rel="noopener noreferrer"
+            >
+              Ver repositorio <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <p class="section-eyebrow">04 · Contacto</p>
+        <h2 id="contact-title" class="section-title">Conectemos el siguiente nodo</h2>
+        <p class="section-lede">
+          Si buscas a alguien en formación, con ganas reales de aprender y aportar,
+          escríbeme. Respondo rápido.
+        </p>
+
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:firexk993@gmail.com">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">firexk993@gmail.com</span>
+          </a>
+          <a class="contact-link" href="https://github.com/castillokfirex" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">github.com/castillokfirex</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Kevin Andrés Castillo Pabón. Hecho con curiosidad y café.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
