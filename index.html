@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  <a href="#contenido" class="skip-link" data-i18n="skip-link">Saltar al contenido</a>
 
   <!-- ===== HEADER / NAV ===== -->
   <header class="site-header" id="inicio">
@@ -29,10 +29,12 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-list" id="navList">
-          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-          <li><a href="#contacto" class="nav-link nav-link--cta">Contacto</a></li>
+          <li><a href="#sobre-mi" class="nav-link" data-i18n="nav-about">Sobre mí</a></li>
+          <li><a href="#habilidades" class="nav-link" data-i18n="nav-skills">Habilidades</a></li>
+          <li><a href="#proyectos" class="nav-link" data-i18n="nav-projects">Proyectos</a></li>
+          <li><a href="#contacto" class="nav-link" data-i18n="nav-contact">Contacto</a></li>
+          <li><button id="langToggle" class="lang-toggle nav-link">EN</button></li>
+          <li><a href="./cv.pdf" download="CV_Kevin_Castillo.pdf" class="nav-link nav-link--cta" target="_blank" rel="noopener noreferrer" data-i18n="btn-cv">Descargar CV</a></li>
         </ul>
       </nav>
     </div>
@@ -72,27 +74,25 @@
       </div>
 
       <div class="container hero-inner">
-        <p class="eyebrow">Floridablanca, Santander · En formación activa</p>
+        <p class="eyebrow" data-i18n="hero-eyebrow">Floridablanca, Santander · En formación activa</p>
         <h1 id="hero-title" class="hero-title">
-          Conectando piezas de código<br>
-          hasta formar soluciones <span class="text-accent">reales</span>.
+          <span data-i18n="hero-title-1">Conectando piezas de código<br>hasta formar soluciones </span><span class="text-accent" data-i18n="hero-title-2">reales</span><span data-i18n="hero-title-3">.</span>
         </h1>
-        <p class="hero-subtitle">
-          Soy Kevin Andrés Castillo Pabón, tengo 17 años y estudio programación en
-          Campuslands desde hace 7 meses. Cada proyecto que construyo es un nodo más
+        <p class="hero-subtitle" data-i18n="hero-subtitle">
+          Soy Kevin Andrés Castillo Pabón, tengo 17 años y llevo 10 meses como estudiante de software en Campuslands. Cada proyecto que construyo es un nodo más
           en una red que no para de crecer.
         </p>
         <div class="hero-actions">
-          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
-          <a href="#contacto" class="btn btn--ghost">Hablemos</a>
+          <a href="#proyectos" class="btn btn--primary" data-i18n="hero-btn-projects">Ver proyectos</a>
+          <a href="#contacto" class="btn btn--ghost" data-i18n="hero-btn-contact">Hablemos</a>
         </div>
 
         <ul class="hero-stack" aria-label="Stack principal">
-          <li>Python</li>
           <li>Java</li>
+          <li>Spring Boot</li>
+          <li>Docker</li>
+          <li>PostgreSQL</li>
           <li>JavaScript</li>
-          <li>MySQL</li>
-          <li>n8n</li>
         </ul>
       </div>
     </section>
@@ -115,31 +115,45 @@
         </div>
 
         <div class="about-content">
-          <p class="section-eyebrow">01 · Sobre mí</p>
-          <h2 id="about-title" class="section-title">
+          <p class="section-eyebrow" data-i18n="about-eyebrow">01 · Sobre mí</p>
+          <h2 id="about-title" class="section-title" data-i18n="about-title">
             Aprendiendo a construir, <br>un nodo a la vez.
           </h2>
-          <p class="about-text">
-            Empecé en programación hace apenas 7 meses en Campuslands, pero ya he
+          <p class="about-text" data-i18n="about-p1">
+            Empecé hace 10 meses como estudiante de software en Campuslands, pero ya he
             recorrido suficiente camino como para tener tres proyectos reales en
             producción: una tienda online, un bot de automatización con IA y un
             portal bancario simulado. Me gusta entender cómo se conectan las piezas
             de un sistema, desde el front-end hasta los flujos que automatizan
             tareas repetitivas.
           </p>
-          <p class="about-text">
+          <p class="about-text" data-i18n="about-p2">
             No vengo de un camino "perfecto" en tecnología: vengo de la curiosidad
             constante y de la disciplina de seguir aprendiendo, semana tras semana.
             Eso es lo que quiero que veas en este portafolio.
           </p>
 
+          <div class="about-skills-subsection">
+            <h3 class="about-tech-title" data-i18n="about-tech-title">Habilidades y Tecnologías</h3>
+            <ul class="about-tech-list">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Docker Compose</li>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+
           <div class="soft-skills" aria-label="Habilidades blandas">
-            <span class="skill-chip">Liderazgo</span>
-            <span class="skill-chip">Trabajo en equipo</span>
-            <span class="skill-chip">Inteligencia emocional</span>
-            <span class="skill-chip">Adaptabilidad</span>
-            <span class="skill-chip">Comunicación asertiva</span>
-            <span class="skill-chip">Resiliencia</span>
+            <span class="skill-chip" data-i18n="skill-leadership">Liderazgo</span>
+            <span class="skill-chip" data-i18n="skill-teamwork">Trabajo en equipo</span>
+            <span class="skill-chip" data-i18n="skill-emotional">Inteligencia emocional</span>
+            <span class="skill-chip" data-i18n="skill-adaptability">Adaptabilidad</span>
+            <span class="skill-chip" data-i18n="skill-communication">Comunicación asertiva</span>
+            <span class="skill-chip" data-i18n="skill-resilience">Resiliencia</span>
           </div>
         </div>
       </div>
@@ -148,9 +162,9 @@
     <!-- ===== HABILIDADES ===== -->
     <section class="skills" id="habilidades" aria-labelledby="skills-title">
       <div class="container">
-        <p class="section-eyebrow">02 · Habilidades técnicas</p>
-        <h2 id="skills-title" class="section-title">Mi stack en construcción</h2>
-        <p class="section-lede">
+        <p class="section-eyebrow" data-i18n="skills-eyebrow">02 · Habilidades técnicas</p>
+        <h2 id="skills-title" class="section-title" data-i18n="skills-title">Mi stack en construcción</h2>
+        <p class="section-lede" data-i18n="skills-lede">
           Tecnologías que he venido manejando durante mi formación, agrupadas por
           el rol que cumplen en lo que construyo.
         </p>
@@ -158,37 +172,37 @@
         <div class="skills-grid">
 
           <article class="skill-card">
-            <h3 class="skill-card-title">Lenguajes</h3>
+            <h3 class="skill-card-title" data-i18n="skills-card1-title">Lenguajes</h3>
             <ul class="skill-list">
-              <li><span class="skill-name">Python</span></li>
               <li><span class="skill-name">Java</span></li>
+              <li><span class="skill-name">Python</span></li>
               <li><span class="skill-name">JavaScript</span></li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <h3 class="skill-card-title">Front-End</h3>
+            <h3 class="skill-card-title" data-i18n="skills-card2-title">Front-End</h3>
             <ul class="skill-list">
-              <li><span class="skill-name">HTML5</span></li>
-              <li><span class="skill-name">CSS3</span></li>
-              <li><span class="skill-name">Diseño responsive</span></li>
+              <li><span class="skill-name">HTML5 / CSS3</span></li>
+              <li><span class="skill-name" data-i18n="skills-card-design">Diseño responsive</span></li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <h3 class="skill-card-title">Datos &amp; Automatización</h3>
+            <h3 class="skill-card-title" data-i18n="skills-card3-title">Backend & Datos</h3>
             <ul class="skill-list">
+              <li><span class="skill-name">Spring Boot</span></li>
+              <li><span class="skill-name">PostgreSQL</span></li>
               <li><span class="skill-name">MySQL</span></li>
-              <li><span class="skill-name">n8n</span></li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <h3 class="skill-card-title">Flujo de trabajo</h3>
+            <h3 class="skill-card-title" data-i18n="skills-card4-title">Herramientas & Flujo</h3>
             <ul class="skill-list">
-              <li><span class="skill-name">Git &amp; GitHub</span></li>
-              <li><span class="skill-name">Scrum</span></li>
-              <li><span class="skill-name">Metodologías ágiles</span></li>
+              <li><span class="skill-name">Docker / Compose</span></li>
+              <li><span class="skill-name">Git & GitHub</span></li>
+              <li><span class="skill-name">n8n</span></li>
             </ul>
           </article>
 
@@ -199,9 +213,9 @@
     <!-- ===== PROYECTOS ===== -->
     <section class="projects" id="proyectos" aria-labelledby="projects-title">
       <div class="container">
-        <p class="section-eyebrow">03 · Proyectos</p>
-        <h2 id="projects-title" class="section-title">Lo que he construido hasta ahora</h2>
-        <p class="section-lede">
+        <p class="section-eyebrow" data-i18n="projects-eyebrow">03 · Proyectos</p>
+        <h2 id="projects-title" class="section-title" data-i18n="projects-title">Lo que he construido hasta ahora</h2>
+        <p class="section-lede" data-i18n="projects-lede">
           Tres proyectos reales, tres formas distintas de resolver problemas:
           comercio, automatización y simulación financiera.
         </p>
@@ -211,13 +225,12 @@
           <article class="project-card">
             <div class="project-card-head">
               <span class="project-icon" aria-hidden="true">🛍️</span>
-              <h3 class="project-title">E-commerce de ropa</h3>
+              <h3 class="project-title" data-i18n="proj1-title">E-commerce de ropa</h3>
             </div>
-            <p class="project-desc">
+            <p class="project-desc" data-i18n="proj1-desc">
               Interfaz front-end que simula una experiencia de compra moderna para
               una tienda de ropa online. Prioriza el descubrimiento de productos,
-              la comparación rápida entre prendas y una ruta clara hacia el
-              checkout, basada en un diseño hecho en Figma.
+              la comparación rápida entre prendas y una ruta clara hacia el checkout.
             </p>
             <ul class="project-tags" aria-label="Tecnologías usadas">
               <li>HTML5</li>
@@ -230,20 +243,19 @@
               href="https://github.com/castillokfirex/aplicacion_de_ecommerce_de_ropa"
               target="_blank" rel="noopener noreferrer"
             >
-              Ver repositorio <span aria-hidden="true">→</span>
+              <span data-i18n="proj-link">Ver repositorio</span> <span aria-hidden="true">→</span>
             </a>
           </article>
 
           <article class="project-card">
             <div class="project-card-head">
               <span class="project-icon" aria-hidden="true">🤖</span>
-              <h3 class="project-title">DeliveryBot</h3>
+              <h3 class="project-title" data-i18n="proj2-title">DeliveryBot</h3>
             </div>
-            <p class="project-desc">
+            <p class="project-desc" data-i18n="proj2-desc">
               Sistema de automatización de pedidos para cafeterías institucionales,
               construido sobre n8n. Convierte Telegram en una terminal de pedidos
-              inteligente, con un agente de IA que permite consultar el menú,
-              gestionar el carrito y hacer pedidos en tiempo real.
+              inteligente, con un agente de IA.
             </p>
             <ul class="project-tags" aria-label="Tecnologías usadas">
               <li>n8n</li>
@@ -256,19 +268,18 @@
               href="https://github.com/castillokfirex/Proyecto_DeliveryBot_castillokevin"
               target="_blank" rel="noopener noreferrer"
             >
-              Ver repositorio <span aria-hidden="true">→</span>
+              <span data-i18n="proj-link">Ver repositorio</span> <span aria-hidden="true">→</span>
             </a>
           </article>
 
           <article class="project-card">
             <div class="project-card-head">
               <span class="project-icon" aria-hidden="true">🏦</span>
-              <h3 class="project-title">Acme Bank</h3>
+              <h3 class="project-title" data-i18n="proj3-title">Acme Bank</h3>
             </div>
-            <p class="project-desc">
+            <p class="project-desc" data-i18n="proj3-desc">
               Simulación de un portal bancario interactivo, responsivo y moderno.
-              Aplicación enfocada exclusivamente en front-end, desarrollada como
-              proyecto final aplicado de la formación en Campuslands.
+              Aplicación enfocada exclusivamente en front-end.
             </p>
             <ul class="project-tags" aria-label="Tecnologías usadas">
               <li>JavaScript</li>
@@ -281,7 +292,7 @@
               href="https://github.com/castillokfirex/ProyectoAcmebank_JavaScript_castillo-kevin-ricaurte-andrey"
               target="_blank" rel="noopener noreferrer"
             >
-              Ver repositorio <span aria-hidden="true">→</span>
+              <span data-i18n="proj-link">Ver repositorio</span> <span aria-hidden="true">→</span>
             </a>
           </article>
 
@@ -292,9 +303,9 @@
     <!-- ===== CONTACTO ===== -->
     <section class="contact" id="contacto" aria-labelledby="contact-title">
       <div class="container contact-inner">
-        <p class="section-eyebrow">04 · Contacto</p>
-        <h2 id="contact-title" class="section-title">Conectemos el siguiente nodo</h2>
-        <p class="section-lede">
+        <p class="section-eyebrow" data-i18n="contact-eyebrow">04 · Contacto</p>
+        <h2 id="contact-title" class="section-title" data-i18n="contact-title">Conectemos el siguiente nodo</h2>
+        <p class="section-lede" data-i18n="contact-lede">
           Si buscas a alguien en formación, con ganas reales de aprender y aportar,
           escríbeme. Respondo rápido.
         </p>
@@ -308,6 +319,10 @@
             <span class="contact-link-label">GitHub</span>
             <span class="contact-link-value">github.com/castillokfirex</span>
           </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/kevin-castillo-pabon-449b28401" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">Kevin Andrés Castillo</span>
+          </a>
         </div>
       </div>
     </section>
@@ -316,7 +331,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year">2026</span> Kevin Andrés Castillo Pabón. Hecho con curiosidad y café.</p>
+      <p>© <span id="year">2026</span><span data-i18n="footer-text"> Kevin Andrés Castillo Pabón. Hecho con curiosidad y café.</span></p>
     </div>
   </footer>
 
