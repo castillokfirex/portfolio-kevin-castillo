@@ -8,15 +8,24 @@ One-page landing de presentación profesional. Construido con HTML5 semántico, 
 
 ## 📁 Estructura del proyecto
 
-```
 portfolio/
-├── index.html        # Estructura semántica (header, main, sections, footer)
-├── styles.css         # Tokens de diseño, layout, responsive
-├── script.js          # Menú móvil + animaciones reveal on scroll
-├── assets/
-│   └── perfil.jpg     # Foto de perfil optimizada (~56 KB)
-└── README.md
+├── index.html        # Estructura semántica, enlaces, y soporte i18n
+├── styles.css        # Diseño, responsive, animaciones WOW y scrollbar personalizado
+├── script.js         # Sistema de idiomas, animaciones, cursor glow y tarjetas interactivas
+├── cv.pdf            # Hoja de vida descargable
+├── img/              # Carpeta de imágenes optimizadas
+└── README.md         # Documentación del proyecto
 ```
+
+## ✨ Novedades y Funcionalidades (Efecto WOW)
+
+- **Sistema Bilingüe (i18n):** Traducción instantánea entre Español e Inglés con Vanilla JS, sin recargar y guardando preferencia local.
+- **Interacciones Creativas:**
+  - Cursor Glow magnético y animado.
+  - Efectos de vidrio reflectante (glassmorphism) al pasar el cursor sobre las tarjetas.
+  - Parallax sutil del fondo (SVG Nodos) controlado por el movimiento del ratón.
+- **CV Directo:** Botón dedicado para descarga instantánea.
+- **Experiencia Actualizada:** 10 meses de desarrollo full-stack como estudiante de Campuslands.
 
 ## 🎨 Sistema de diseño
 
